@@ -1,0 +1,14 @@
+.container{
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        cursor: pointer;
+    }
+.wrapper{
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
+.thumb img{
+        width: 100%
+    }
