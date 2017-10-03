@@ -109,7 +109,9 @@ var Game = function(options){
     
     this.clickHandler = function(e){
         var flag = false;
-        if( _this.clickedCounter < 2 ){
+	if($(this).attr("flipped") == "true"){
+		alert("This cube is already flipped.");
+	}else if( _this.clickedCounter < 2 ){
             var index = parseInt($(this).data("index"));
             var jqThis = $(this);
             _this.currentlyFlipped.map(function(item){
